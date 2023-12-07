@@ -1,5 +1,5 @@
-from project_name.base import NAME
+from evod_debug_cache.base import NAME
 
 
 def test_base():
-    assert NAME == "project_name"
+    assert NAME == "evod_debug_cache"

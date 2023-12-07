@@ -1,4 +1,4 @@
-"""Entry point for project_name."""
+"""Entry point for evod_debug_cache."""
 
 from .cli import main  # pragma: no cover
 

@@ -1,4 +1,4 @@
-"""Python setup.py for project_name package"""
+"""Python setup.py for evod_debug_cache package"""
 import io
 import os
 from setuptools import find_packages, setup
@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 
 def read(*paths, **kwargs):
     """Read the contents of a text file safely.
-    >>> read("project_name", "VERSION")
+    >>> read("evod_debug_cache", "VERSION")
     '0.1.0'
     >>> read("README.md")
     ...
@@ -30,17 +30,17 @@ def read_requirements(path):
 
 
 setup(
-    name="project_name",
-    version=read("project_name", "VERSION"),
-    description="project_description",
-    url="https://github.com/author_name/project_urlname/",
+    name="evod_debug_cache",
+    version=read("evod_debug_cache", "VERSION"),
+    description="Awesome evod_debug_cache created by maycuatroi",
+    url="https://github.com/maycuatroi/evod-debug-cache/",
     long_description=read("README.md"),
     long_description_content_type="text/markdown",
-    author="author_name",
+    author="maycuatroi",
     packages=find_packages(exclude=["tests", ".github"]),
     install_requires=read_requirements("requirements.txt"),
     entry_points={
-        "console_scripts": ["project_name = project_name.__main__:main"]
+        "console_scripts": ["evod_debug_cache = evod_debug_cache.__main__:main"]
     },
     extras_require={"test": read_requirements("requirements-test.txt")},
 )
